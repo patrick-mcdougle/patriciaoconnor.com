@@ -1,0 +1,8 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    {% for entity in entities %}
+        <a href="{{ path('project_edit', { 'id': entity.id }) }}">edit</a>
+    {% endfor %}
+    <a href="{{ path('project_new') }}">Create a new entry</a>
+{% endblock %}
