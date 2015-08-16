@@ -46,9 +46,9 @@ class LoginFormType extends AbstractType
         ;
     }
 
-    public function configureOptions(OptionsResolver $optionsResolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
-        $optionsResolver->setDefault('action', $this->router->generate('login_check'));
+        $resolver->setDefault('action', $this->router->generate('login_check'));
     }
 
     /**
