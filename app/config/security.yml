@@ -1,24 +1,36 @@
-# To get started with security, check out the documentation:
-# http://symfony.com/doc/current/book/security.html
 security:
+    encoders:
+        Symfony\Component\Security\Core\User\User: bcrypt
 
-    # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
-        in_memory:
-            memory: ~
+        app_in_memory_provider:
+            memory:
+                users:
+                    patrick-mcdougle:
+                        password: $2y$13$w5deQ4poYkBzsmOp48d5We7TIlNnSLuyv5h7N7zAKt/7VOQC48cWa
+                        roles: [ROLE_ADMIN]
 
     firewalls:
-        # disables authentication for assets and the profiler, adapt it according to your needs
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
         main:
             anonymous: ~
-            # activate different ways to authenticate
+            logout:
+                path: logout
+                target: /
+            form_login:
+                login_path: login
+                check_path: login_check
+                default_target_path: admin
 
-            # http_basic: ~
-            # http://symfony.com/doc/current/book/security.html#a-configuring-how-your-users-will-authenticate
+                username_parameter: login_form[username]
+                password_parameter: login_form[password]
 
-            # form_login: ~
-            # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+                csrf_provider: security.csrf.token_manager
+                csrf_parameter: login_form[_token]
+                intention: login_form
+
+    access_control:
+        - { path: ^/admin, roles: ROLE_ADMIN }
