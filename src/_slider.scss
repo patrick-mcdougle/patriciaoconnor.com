@@ -1,0 +1,38 @@
+.frame {
+  width: 100%;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slides {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.carousel li {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  transition: opacity 2s;
+
+  img, picture {
+    width: 100%;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}

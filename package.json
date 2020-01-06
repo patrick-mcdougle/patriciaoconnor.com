@@ -1,0 +1,25 @@
+{
+  "name": "patriciaoconnor.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Patrick McDougle <patrick@patrickmcdougle.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "^10.0.3",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "lory.js": "^2.5.3",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "scrollmagic": "^2.0.7",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
