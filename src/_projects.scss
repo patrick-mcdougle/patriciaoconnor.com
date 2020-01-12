@@ -3,14 +3,20 @@
   display: flex;
   justify-content: center;
 
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+  }
+
   a {
     padding: 0 .5em;
     margin: 0 1.5em;
     border-bottom: 2px solid transparent;
-    transition: all .3s;
+    -webkit-transition: color $animation-timing;
+    transition: color $animation-timing;
 
     &.active {
       color: cadetblue;
+      padding-bottom: 3px;
       border-bottom: 2px solid cadetblue;
     }
 
@@ -24,12 +30,27 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  min-height: 100vh;
 
   .project {
     display: block;
     text-align: center;
-    margin: 1em .5em;
+    margin: 0 .5em 1em;
     max-width: 400px;
-    transition: opacity .3s;
+
+    h1 {
+      font-size: 1.75em;
+    }
+
+    h2 {
+      font-size: .85em;
+      letter-spacing: .15em;
+      font-weight: normal;
+    }
+
+    img {
+      margin-bottom: 1em;
+      object-fit: cover;
+    }
   }
 }

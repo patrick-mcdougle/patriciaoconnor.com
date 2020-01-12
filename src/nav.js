@@ -3,8 +3,8 @@ const primaryNav = document.getElementById('primary-nav');
 const subnavContainer = document.getElementById('subnav-container');
 
 // Pixels per frame
-const openSpeed = 20;
-const closeSpeed = 18;
+const openSpeed = 25;
+const closeSpeed = 20;
 const animatingNavs = [];
 let navOpen = false;
 

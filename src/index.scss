@@ -44,6 +44,7 @@ p {
 a {
   text-decoration: none;
   color: $slate;
+  -webkit-transition: color $animation-timing;
   transition: color $animation-timing;
 
   nav &,
@@ -54,7 +55,7 @@ a {
   }
 
   &:hover {
-    color: #24c4f8;
+    color: cadetblue;
   }
 }
 
@@ -65,8 +66,10 @@ body {
     padding: calc(#{$nav-height} + 2.5em) 0 0;
   }
 
-  &.home {
-    padding: calc(#{$nav-height}) 0 0;
+  @media (min-width: $mobile-breakpoint) {
+    &.no-pad {
+      padding: calc(#{$nav-height}) 0 0;
+    }
   }
 }
 
@@ -75,6 +78,7 @@ body {
   min-height: $nav-height;
   position: fixed;
   top: 0;
+  -webkit-transition: background $animation-timing, color $animation-timing;
   transition: background $animation-timing, color $animation-timing;
   z-index: 2;
 
@@ -200,6 +204,7 @@ body {
       height: 0;
       overflow: hidden;
       opacity: 0;
+      -webkit-transition: opacity $animation-timing;
       transition: opacity $animation-timing;
 
       &.active {
@@ -224,9 +229,9 @@ body {
     position: fixed;
     left: 50%;
     transform: translate(-50%);
+    top: calc(#{$nav-height} + 2.5em);
     &.unfix {
       position: absolute;
-      top: calc(#{$nav-height} + 2.5em);
     }
   }
 
