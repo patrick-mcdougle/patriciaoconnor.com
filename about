@@ -10,19 +10,19 @@
 <body class="no-pad">
 <div id="nav-container">
     <div class="nav-wrap">
-        <a class="home" href="/index.html">Patrica O&rsquo;Connor</a>
+        <a class="home" href="/">Patrica O&rsquo;Connor</a>
         <nav id="primary-nav">
-            <a href="/index.html#All" data-subnav="0">Work</a>
-            <a href="/about.html" data-subnav="1" data-disable-mobile="1">About</a>
+            <a href="/#All" data-subnav="0">Work</a>
+            <a href="/about" data-subnav="1" data-disable-mobile="1">About</a>
         </nav>
     </div>
     <div id="subnav-container">
         <div id="subnav-work">
-            <a class="minerva" href="/index.html#All">All Projects</a>
-            <!--            <a class="minerva" href="./index.html#Branding">Branding</a>-->
-            <a class="minerva" href="/index.html#Editorial">Editorial</a>
-            <a class="minerva" href="/index.html#Illustration">Illustration</a>
-            <a class="minerva" href="/index.html#MustHave">Must Have Box</a>
+            <a class="minerva" href="/#All">All Projects</a>
+            <!--            <a class="minerva" href="./#Branding">Branding</a>-->
+            <a class="minerva" href="/#Editorial">Editorial</a>
+            <a class="minerva" href="/#Illustration">Illustration</a>
+            <a class="minerva" href="/#MustHave">Must Have Box</a>
         </div>
         <div id="subnav-bio">
             <div><img src="/imgs/POC_Portfolio_Bio_Img_1000x1000.jpg" alt="Image of Patricia O'Connor beside a fjord in Norway" /></div>

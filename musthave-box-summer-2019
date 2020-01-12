@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Patricia O&rsquo;Connor | Must Have Box Fall 2019</title>
+    <title>Patricia O&rsquo;Connor | Must Have Box Summer 2019</title>
     <link rel="stylesheet" href="https://use.typekit.net/ldb8jwr.css">
     <link rel="stylesheet" type="text/css" href="/dist/main.css" />
 </head>
 <body class="no-pad">
 <div id="nav-container">
     <div class="nav-wrap">
-        <a class="home" href="/index.html">Patrica O&rsquo;Connor</a>
+        <a class="home" href="/">Patrica O&rsquo;Connor</a>
         <nav id="primary-nav">
-            <a href="/index.html#All" data-subnav="0">Work</a>
-            <a href="/about.html" data-subnav="1" data-disable-mobile="1">About</a>
+            <a href="/#All" data-subnav="0">Work</a>
+            <a href="/about" data-subnav="1" data-disable-mobile="1">About</a>
         </nav>
     </div>
     <div id="subnav-container">
         <div id="subnav-work">
-            <a class="minerva" href="/index.html#All">All Projects</a>
-            <!--            <a class="minerva" href="./index.html#Branding">Branding</a>-->
-            <a class="minerva" href="/index.html#Editorial">Editorial</a>
-            <a class="minerva" href="/index.html#Illustration">Illustration</a>
-            <a class="minerva" href="/index.html#MustHave">Must Have Box</a>
+            <a class="minerva" href="/#All">All Projects</a>
+            <!--            <a class="minerva" href="./#Branding">Branding</a>-->
+            <a class="minerva" href="/#Editorial">Editorial</a>
+            <a class="minerva" href="/#Illustration">Illustration</a>
+            <a class="minerva" href="/#MustHave">Must Have Box</a>
         </div>
         <div id="subnav-bio">
             <div><img src="/imgs/POC_Portfolio_Bio_Img_1000x1000.jpg" alt="Image of Patricia O'Connor beside a fjord in Norway" /></div>
@@ -50,13 +50,13 @@
         </div>
     </div>
 </div>
-<div id="project-details" class="disable">
+<div id="project-details">
     <nav class="project-nav">
-        <a class="prev" href="/courtside.html">Prev</a>
+        <a class="prev" href="/proud-of-us">Prev</a>
         <a href="/index.html#All">All</a>
-        <a class="next" href="/proud-of-us.html">Next</a>
+        <a class="next" href="/courtside">Next</a>
     </nav>
-    <h1 class="minerva">Fall 2019</h1>
+    <h1 class="minerva">Summer 2019</h1>
     <h2 class="medium">Must Have Box</h2>
     <p>Must Have is a quarterly subscription box of curated, seasonal items. From covetable cult classics to rising indie stars in fashion, beauty, home, fitness, food, and more. Each box will be a happy surprise.</p>
     <p>Art Direction: Jae Payne
@@ -66,22 +66,27 @@
 </div>
 <div class="full-bleed">
     <picture>
-        <source media="(min-width: 1100px)" srcset="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Hero.jpg" />
+        <source media="(min-width: 1100px)" srcset="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Hero_Desktop.jpg" />
         <img src="https://via.placeholder.com/400" />
     </picture>
 </div>
 <div class="scroll-gallery">
-    <div class="carousel">
+    <img src="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_02.jpg" />
+    <div class="carousel stick-off">
         <ul class="slides">
-            <li class="active"><img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Carousel/POC_MH_Fall_Product_Carousel_01.jpg" /></li>
-            <li><img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Carousel/POC_MH_Fall_Product_Carousel_02.jpg" /></li>
-            <li><img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Carousel/POC_MH_Fall_Product_Carousel_03.jpg" /></li>
-            <li><img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Carousel/POC_MH_Fall_Product_Carousel_04.jpg" /></li>
+            <li class="active"><img src="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Carousel/POC_MH_Summer_Product_Carousel_01.jpg" /></li>
+            <li><img src="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Carousel/POC_MH_Summer_Product_Carousel_02.jpg" /></li>
+            <li><img src="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Carousel/POC_MH_Summer_Product_Carousel_03.jpg" /></li>
+            <li><img src="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Carousel/POC_MH_Summer_Product_Carousel_04.jpg" /></li>
+            <li><img src="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Carousel/POC_MH_Summer_Product_Carousel_05.jpg" /></li>
         </ul>
     </div>
-    <img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_02.jpg" />
-    <img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_03.jpg" />
-    <img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_04.jpg" />
+</div>
+<div class="full-bleed">
+    <picture>
+        <source media="(min-width: 1100px)" srcset="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_04.gif" />
+        <img src="https://via.placeholder.com/400" />
+    </picture>
 </div>
 <script async defer type="text/javascript" src="/dist/main.js"></script>
 </body>
