@@ -19,7 +19,7 @@
     <div id="subnav-container">
         <div id="subnav-work">
             <a class="minerva" href="/#All">All Projects</a>
-            <!--            <a class="minerva" href="./#Branding">Branding</a>-->
+            <a class="minerva" href="/#Branding">Branding</a>
             <a class="minerva" href="/#Editorial">Editorial</a>
             <a class="minerva" href="/#Illustration">Illustration</a>
             <a class="minerva" href="/#MustHave">Must Have Box</a>
@@ -53,7 +53,7 @@
 <div id="project-details">
     <nav class="project-nav">
         <a class="prev" href="/proud-of-us">Prev</a>
-        <a href="/index.html#All">All</a>
+        <a href="/#All">All</a>
         <a class="next" href="/courtside">Next</a>
     </nav>
     <h1 class="minerva">Summer 2019</h1>
@@ -66,8 +66,8 @@
 </div>
 <div class="full-bleed">
     <picture>
-        <source media="(min-width: 1100px)" srcset="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Hero_Desktop.jpg" />
-        <img src="https://via.placeholder.com/400" />
+        <source media="(min-width: 1100px)" srcset="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Hero_Desktop_2.jpg" />
+        <img src="/imgs/POC_MH_Summer_2019/MH_Summer_2019_Hero_Square.jpg" />
     </picture>
 </div>
 <div class="scroll-gallery">

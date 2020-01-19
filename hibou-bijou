@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Patricia O&rsquo;Connor | Must Have Box Fall 2019</title>
+    <title>Patricia O&rsquo;Connor | Hibou Bijou</title>
     <link rel="stylesheet" href="https://use.typekit.net/ldb8jwr.css">
     <link rel="stylesheet" type="text/css" href="/dist/main.css" />
 </head>
-<body class="no-pad">
+<body>
 <div id="nav-container">
     <div class="nav-wrap">
         <a class="home" href="/">Patrica O&rsquo;Connor</a>
@@ -50,38 +50,35 @@
         </div>
     </div>
 </div>
-<div id="project-details" class="disable">
+<div id="project-details" class="unfix">
     <nav class="project-nav">
-        <a class="prev" href="/courtside">Prev</a>
+        <a class="prev" href="/musthave-box-fall-2019">Prev</a>
         <a href="/#All">All</a>
-        <a class="next" href="/hibou-bijou">Next</a>
+        <a class="next" href="/pantry">Next</a>
     </nav>
-    <h1 class="minerva">Fall 2019</h1>
-    <h2 class="medium">Must Have Box</h2>
-    <p>Must Have is a quarterly subscription box of curated, seasonal items. From covetable cult classics to rising indie stars in fashion, beauty, home, fitness, food, and more. Each box will be a happy surprise.</p>
-    <p>Art Direction: Jae Payne
-        <br />
-        Photography: Matthew Kelly
-    </p>
+    <h1 class="minerva">Hibou Bijou</h1>
+    <h2 class="medium">Branding</h2>
+    <p>Hibou Bijou is a boutique jewelry studio specializing in looks for the modern woman. The brand design for Hibou Bijou reflects the clean and modern sensibilities of their clients: women who are sophisticated and smart, yet adventurous and strong.</p>
+    <p>The logo is built around a lovely sans serif typeface, Mostra Nuova, whose design was inspired by Italian art deco posters of the 1930s. This gives the logo a tailored and modern feel. It also subtly nods to the meaning of Hibou Bijou: Jeweled Owl. The secondary logos reinforce the art deco feel of the brand.</p>
+</div>
+<div class="scroll-gallery">
+    <img src="/imgs/POC_HB/POC_HB_Logo_Mock.jpg" />
+</div>
+<div class="full-bleed portal">
+    <picture>
+        <source media="(min-width: 1100px)" srcset="/imgs/POC_HB/POC_HB_BC_1680x1080.jpg" />
+        <img src="/imgs/POC_HB/POC_HB_BC_Square.jpg" />
+    </picture>
+</div>
+<div class="scroll-gallery stick-on">
+    <img src="/imgs/POC_HB/POC_HB_Cheetah_Square.jpg">
+    <img class="stick-off" src="/imgs/POC_HB/POC_HB_BoxMock_Square.jpg" />
 </div>
 <div class="full-bleed">
     <picture>
-        <source media="(min-width: 1100px)" srcset="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Hero.jpg" />
-        <img src="https://via.placeholder.com/400" />
+        <source media="(min-width: 1100px)" srcset="/imgs/POC_HB/POC_HB_Logo_1680x1080.jpg" />
+        <img src="/imgs/POC_HB/POC_HB_Logo_Square.jpg" />
     </picture>
-</div>
-<div class="scroll-gallery">
-    <div class="carousel">
-        <ul class="slides">
-            <li class="active"><img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Carousel/POC_MH_Fall_Product_Carousel_01.jpg" /></li>
-            <li><img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Carousel/POC_MH_Fall_Product_Carousel_02.jpg" /></li>
-            <li><img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Carousel/POC_MH_Fall_Product_Carousel_03.jpg" /></li>
-            <li><img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Carousel/POC_MH_Fall_Product_Carousel_04.jpg" /></li>
-        </ul>
-    </div>
-    <img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_02.jpg" />
-    <img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_03.jpg" />
-    <img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_04.jpg" />
 </div>
 <script async defer type="text/javascript" src="/dist/main.js"></script>
 </body>

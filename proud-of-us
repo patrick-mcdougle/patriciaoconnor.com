@@ -19,7 +19,7 @@
   <div id="subnav-container">
     <div id="subnav-work">
       <a class="minerva" href="/#All">All Projects</a>
-      <!--          <a class="minerva" href="./#Branding">Branding</a>-->
+      <a class="minerva" href="/#Branding">Branding</a>
       <a class="minerva" href="/#Editorial">Editorial</a>
       <a class="minerva" href="/#Illustration">Illustration</a>
       <a class="minerva" href="/#MustHave">Must Have Box</a>
@@ -52,8 +52,8 @@
 </div>
 <div id="project-details" class="unfix">
   <nav class="project-nav">
-    <a class="prev" href="/musthave-box-fall-2019">Prev</a>
-    <a href="/index.html#All">All</a>
+    <a class="prev" href="/playground-2019">Prev</a>
+    <a href="/#All">All</a>
     <a class="next" href="/musthave-box-summer-2019">Next</a>
   </nav>
   <h1 class="minerva">Proud Of Us</h1>

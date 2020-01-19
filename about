@@ -19,7 +19,7 @@
     <div id="subnav-container">
         <div id="subnav-work">
             <a class="minerva" href="/#All">All Projects</a>
-            <!--            <a class="minerva" href="./#Branding">Branding</a>-->
+            <a class="minerva" href="/#Branding">Branding</a>
             <a class="minerva" href="/#Editorial">Editorial</a>
             <a class="minerva" href="/#Illustration">Illustration</a>
             <a class="minerva" href="/#MustHave">Must Have Box</a>
