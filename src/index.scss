@@ -59,6 +59,15 @@ a {
   }
 }
 
+dl {
+  margin: 0;
+}
+
+dt, dd {
+  display: inline;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: calc(#{$nav-height} + 2em) 0 0;
@@ -70,6 +79,12 @@ body {
     &.no-pad {
       padding: calc(#{$nav-height}) 0 0;
     }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .no-mobile {
+    display: none;
   }
 }
 
@@ -188,15 +203,6 @@ body {
 
       > *:last-child {
         width: 35%;
-      }
-
-      dl {
-        margin: 0;
-      }
-
-      dt, dd {
-        display: inline;
-        margin: 0;
       }
     }
 
