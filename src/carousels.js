@@ -1,3 +1,5 @@
+import * as imagesloaded from 'imagesloaded';
+
 const carousels = [];
 let interval;
 
@@ -23,6 +25,13 @@ class Carousel {
   constructor(containerElement) {
     this.element = containerElement;
     this.index = 0;
+    this.imageWatcher = imagesloaded(containerElement);
+    this.imageWatcher.once('always', () => {
+      this.imageWatcher.allOff();
+      delete this.imageWatcher;
+      this.resizeContainer();
+    });
+    this.imageWatcher.on('progress', () => this.resizeContainer());
     this.resizeContainer();
   }
 
