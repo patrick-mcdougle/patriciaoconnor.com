@@ -79,10 +79,7 @@
     </div>
 </div>
 <div class="full-bleed">
-    <picture>
-        <source media="(min-width: 1100px)" srcset="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_04.gif" />
-        <img src="https://via.placeholder.com/400" />
-    </picture>
+    <img src="/imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_04.gif" />
 </div>
 <div class="credits">
     <h2>Credits</h2>

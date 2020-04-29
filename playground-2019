@@ -59,6 +59,12 @@
     <h1 class="minerva">Play/Ground 2019</h1>
     <h2 class="medium">Branding</h2>
     <p>Play/Ground is an immersive and interactive festival aspiring to help women power their "happily ever afters" &mdash; whatever they may be. The extravaganza features distinct villages offering attendees full access to keynote discussions with A-list celebrities and pop-culture luminaries, live fitness and wellness activities, art installations, a shopping bazaar, a beauty carnival, and so much more.</p>
+    <h2 class="medium">Press</h2>
+    <p>
+      <a target="_blank" href="https://www.teenvogue.com/story/camila-mendes-to-lil-nas-x-here-are-this-weekends-best-looks-from-our-favorites-stars">Teen Vogue</a><br />
+      <a target="_blank" href="https://okmagazine.com/photos/milo-ventimiglia-amanda-seyfried-snuggle-puppies-art-of-racing-in-the-rain-photos/">OK Magazine</a><br />
+      <a target="_blank" href="https://www.hollywoodreporter.com/news/mandy-moore-camila-mendes-talk-overcoming-rejection-body-image-struggles-1220592">Hollywood Magazine</a>
+    </p>
 </div>
 <div class="scroll-gallery">
     <img src="/imgs/POC_PG_2019/PS19_PG_Staff_Social_IG_03.jpg" />
@@ -66,8 +72,9 @@
 <div class="full-bleed portal">
     <img src="/imgs/POC_PG_2019/POC_PG_2019_Hero.jpg" />
 </div>
-<div class="scroll-gallery">
+<div class="scroll-gallery stick-on">
     <img src="/imgs/POC_PG_2019/POC_PG_Social.jpg" />
+    <img class="stick-off" src="/imgs/POC_PG_2019/POC_PSPG_2019_Square.jpg" />
 </div>
 <div class="full-bleed">
     <img src="/imgs/POC_PG_2019/POC_PG_2019_Icons.jpg" />
@@ -76,7 +83,7 @@
     <h2>Credits</h2>
     <dl>
         <dt class="bold">My Role: </dt>
-        <dd>Photo Backdrop, Icon Set, Social &amp; Editorial Graphics, Merchandise<br /></dd>
+        <dd>Icon Set, Social &amp; Editorial Graphics, VIP Photo Backdrops, Merchandise<br /></dd>
         <dt class="bold">Creative Direction: </dt>
         <dd>Jenny Anna Ung<br /></dd>
         <dt class="bold">Additional Support From: </dt>

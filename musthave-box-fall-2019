@@ -61,10 +61,7 @@
     <p>Must Have is a quarterly subscription box of curated, seasonal items. From covetable cult classics to rising indie stars in fashion, beauty, home, fitness, food, and more. Each box will be a happy surprise.</p>
 </div>
 <div class="full-bleed">
-    <picture>
-        <source media="(min-width: 1100px)" srcset="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Hero.jpg" />
-        <img src="https://via.placeholder.com/400" />
-    </picture>
+    <img src="/imgs/POC_MH_Fall_2019/POC_MH_Fall_2019_Hero.jpg" />
 </div>
 <div class="scroll-gallery">
     <div class="carousel">
