@@ -3,10 +3,13 @@ import { useEffect, useState } from 'react';
 const mobileBreakpoint = 768;
 
 export function useWindowDims() {
-  const [dims, setDims] = useState({ width: undefined, height: undefined });
+  const [dims, setDims] = useState<{
+    width: number | undefined;
+    height: number | undefined;
+  }>({ width: undefined, height: undefined });
 
   useEffect(() => {
-    let rafId;
+    let rafId: number;
     function handleResize() {
       if (rafId) {
         window.cancelAnimationFrame(rafId);

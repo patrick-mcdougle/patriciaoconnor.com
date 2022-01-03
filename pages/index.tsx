@@ -3,7 +3,12 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, {
-  useContext, useEffect, useMemo, useRef, useState,
+  useContext,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
 } from 'react';
 import Layout from '../src/layout';
 import Carousel from '../src/Carousel';
@@ -19,26 +24,26 @@ interface IndexProps {
 function IndexPage({ projects, projectCategories }: IndexProps) {
   const router = useRouter();
   const [currentHash, setCurrentHash] = useState('');
-  const [filter, setFilter] = useState(() => projectCategories[0]);
+  const [filter, setFilter] = useState(projectCategories[0]);
   const jumpElementRef = useRef<HTMLSpanElement>();
   const isMobile = useContext(IsMobileContext);
 
-  useEffect(() => {
-    document.getElementById('__next').classList.add('no-pad');
+  useLayoutEffect(() => {
+    document.getElementById('__next')?.classList.add('no-pad');
     function handleHashChange() {
       const windowHash = window.location.hash;
       if (windowHash === '') {
         setCurrentHash(`#${encodeURIComponent(filter)}`);
       } else {
         setCurrentHash(windowHash);
-        jumpElementRef.current.scrollIntoView();
+        jumpElementRef.current?.scrollIntoView();
       }
     }
 
     router.events.on('hashChangeComplete', handleHashChange);
     handleHashChange();
     return () => {
-      document.getElementById('__next').classList.remove('no-pad');
+      document.getElementById('__next')?.classList.remove('no-pad');
       router.events.off('hashChangeComplete', handleHashChange);
     };
   }, []);
@@ -69,13 +74,13 @@ function IndexPage({ projects, projectCategories }: IndexProps) {
           <Carousel items={homeGalleryItems} />
         </div>
       ) : null }
-      <span id="All%20Projects" ref={jumpElementRef} aria-hidden="true" style={{ position: 'relative', top: 'calc(-50px - 4em)' }} />
+      <span id="All%20Projects" ref={(elementRef) => { jumpElementRef.current = elementRef ?? undefined; }} aria-hidden="true" style={{ position: 'relative', top: 'calc(-50px - 4em)' }} />
       <div className="projects-container">
         <nav className="projects-nav">
           {projectCategories.map((category) => {
             const hash = `#${encodeURIComponent(category)}`;
             return (
-              <Link key={category} href={`/${hash}`}><a className={filter === category ? 'active' : null}>{category}</a></Link>
+              <Link key={category} href={`/${hash}`}><a className={filter === category ? 'active' : undefined}>{category}</a></Link>
             );
           })}
         </nav>

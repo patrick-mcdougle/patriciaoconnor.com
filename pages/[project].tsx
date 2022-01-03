@@ -1,28 +1,76 @@
 import fs from 'fs';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import path from 'path';
-import PropTypes from 'prop-types';
 import React from 'react';
-import Carousel from '../src/Carousel';
+import Carousel, { LinkableImageData } from '../src/Carousel';
+import { getProjectData, Project } from '../src/cms/utils';
 import Layout from '../src/layout';
-import { getProjectData } from '../src/cms/utils';
 
-function ProjectElement({ element }) {
+interface AltableImageData {
+  alt?: string;
+}
+
+interface MobileDesktopImage extends AltableImageData {
+  desktop_img: string;
+  mobile_img?: string;
+}
+
+export interface StandardImageData extends AltableImageData {
+  src: string;
+}
+
+interface ClassedImageData extends StandardImageData {
+  class?: string;
+}
+
+interface CarouselItem {
+  background?: string;
+  items: LinkableImageData[];
+  type?: 'carousel';
+}
+
+type ScrollGalleryItem = CarouselItem | ClassedImageData;
+
+interface ScrollGallery {
+  type: 'scroll-gallery';
+  items: ScrollGalleryItem[];
+}
+
+interface FullBleed extends MobileDesktopImage {
+  type: 'full-bleed';
+}
+
+interface FullBleedVideo {
+  type: 'full-bleed-video';
+  videoFile: string;
+}
+
+export type ProjectElements = ScrollGallery | FullBleed | FullBleedVideo;
+
+interface ProjectElementProps {
+  element: ProjectElements;
+}
+
+function ProjectElement({ element }: ProjectElementProps) {
   switch (element.type) {
     case 'scroll-gallery':
       return (
         <div className="scroll-gallery">
           {element.items.map((item, index) => {
-            if (item.type && item.type === 'carousel') {
-              return (<div className="carousel" style={item.background ? { background: item.background } : null} key={item.items[0].src}><Carousel items={item.items} /></div>);
+            if ('type' in item && item.type === 'carousel') {
+              return (<div className="carousel" style={item.background ? { background: item.background } : undefined} key={item.items[0].src}><Carousel items={item.items} /></div>);
             }
-            return (
-              <React.Fragment key={item.src}>
-                <img className={item.class ?? null} src={item.src} alt={item.alt ?? ''} />
-                {index === element.items.length - 1 ? <br /> : null}
-              </React.Fragment>
-            );
+            if (('src' in item)) {
+              return (
+                <React.Fragment key={item.src}>
+                  <img className={item.class} src={item.src} alt={item.alt ?? ''} />
+                  {index === element.items.length - 1 ? <br /> : null}
+                </React.Fragment>
+              );
+            }
+            return null;
           })}
         </div>
       );
@@ -45,13 +93,17 @@ function ProjectElement({ element }) {
         <video className="full-bleed" playsInline loop muted autoPlay controls src={element.videoFile} />
       );
     default:
-      throw new Error(`type not found: ${element.type}`);
+      return null;
   }
+}
+
+interface ProjectProps {
+  project: Project & { nav: { prevProject: string; nextProject: string; }};
 }
 
 function ProjectPage({
   project,
-}) {
+}: ProjectProps) {
   const {
     credits,
     descriptionHTML,
@@ -70,7 +122,7 @@ function ProjectPage({
       <div id="project-details">
         <nav className="project-nav">
           <Link href={nav.prevProject}><a className="prev">Prev</a></Link>
-          <Link href="/#All%20Projects"><a>All</a></Link>
+          <Link href="/#All%20Projects" prefetch={false}><a>All</a></Link>
           <Link href={nav.nextProject}><a className="next">Next</a></Link>
         </nav>
         <h1 className="minerva">{title}</h1>
@@ -99,21 +151,11 @@ function ProjectPage({
   );
 }
 
-ProjectPage.propTypes = {
-  project: PropTypes.shape({
-    credits: PropTypes.objectOf(PropTypes.string).isRequired,
-    descriptionHTML: PropTypes.string.isRequired,
-    displayCategory: PropTypes.string.isRequired,
-    elements: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
-    nav: PropTypes.shape({
-      prevProject: PropTypes.string.isRequired,
-      nextProject: PropTypes.string.isRequired,
-    }).isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-export async function getStaticProps({ params }) {
+// eslint-disable-next-line max-len
+export const getStaticProps: GetStaticProps<ProjectProps> = async function getStaticProps({ params }) {
+  if (!params) {
+    throw new Error('params was not in getStaticProps but was required');
+  }
   const projects = await getProjectData();
   const projectIndex = projects.findIndex((project) => project.url.substring(1) === params.project);
   const prevProjectIndex = projectIndex === 0 ? projects.length - 1 : projectIndex - 1;
@@ -129,9 +171,9 @@ export async function getStaticProps({ params }) {
       },
     },
   };
-}
+};
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async function getStaticPaths() {
   const files = await fs.promises.readdir(path.resolve('src/cms/projects'));
   return {
     paths: files.filter((fileName) => fileName.endsWith('.json')).map((fileName) => (
@@ -139,6 +181,6 @@ export async function getStaticPaths() {
     )),
     fallback: false,
   };
-}
+};
 
 export default ProjectPage;

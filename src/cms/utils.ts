@@ -1,9 +1,13 @@
 import fs from 'fs';
 import path from 'path';
+import { ProjectElements } from '../../pages/[project]';
 
 export interface Project {
   category: string[];
+  credits: Record<string, string>;
+  descriptionHTML: string;
   displayCategory: string;
+  elements: ProjectElements[];
   thumbnail: string;
   title: string;
   url: string;
@@ -19,7 +23,7 @@ export async function getProjectData(): Promise<Project[]> {
     .then((fileContents) => fileContents.map((fileMeta) => ({ ...JSON.parse(fileMeta.contents.toString()), url: `/${fileMeta.fileName}` })));
 }
 
-export function getProjectCategoriesFromProjects(projects): string[] {
+export function getProjectCategoriesFromProjects(projects: Project[]): string[] {
   const projectCategories: Set<string> = new Set();
   projects.forEach((project) => {
     project.category.forEach((category) => {
@@ -27,8 +31,4 @@ export function getProjectCategoriesFromProjects(projects): string[] {
     });
   });
   return ['All Projects', ...Array.from(projectCategories.values()).sort()];
-}
-
-export async function getProjectCategories() {
-  return getProjectCategoriesFromProjects(await getProjectData());
 }

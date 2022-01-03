@@ -8,9 +8,9 @@ function Layout({ children }: PropsWithChildren<{}>) {
     <>
       <div id="nav-container">
         <div className="nav-wrap">
-          <Link href="/"><a className="home">Patrica O&rsquo;Connor</a></Link>
+          <Link href="/" prefetch={false}><a className="home">Patrica O&rsquo;Connor</a></Link>
           <nav id="primary-nav">
-            <Link href="/#All%20Projects"><a>Work</a></Link>
+            <Link href="/#All%20Projects" prefetch={false}><a>Work</a></Link>
             <Link href="/about"><a>About</a></Link>
           </nav>
         </div>

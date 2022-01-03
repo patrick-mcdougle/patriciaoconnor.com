@@ -105,15 +105,6 @@ body {
     }
   }
 
-  &.open {
-    background: $slate;
-    color: white;
-
-    a {
-      color: white;
-    }
-  }
-
   .nav-wrap {
     max-width: $mobile-max-width;
     position: relative;
