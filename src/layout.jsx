@@ -104,7 +104,7 @@ function Layout({ children, projectCategories }) {
             {projectCategories.map((category) => {
               const hash = `#${encodeURIComponent(category)}`;
               return (
-                <Link key={category} href={`/${hash}`}><a className="minerva">{category}</a></Link>
+                <Link key={category} href={`/${hash}`}><a onClick={isMobile ? () => activateSubnav() : null} className="minerva">{category}</a></Link>
               );
             })}
           </div>

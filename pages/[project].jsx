@@ -70,9 +70,9 @@ function ProjectPage({
       </Head>
       <div id="project-details">
         <nav className="project-nav">
-          <Link href="/[project]" as={`${nav.prevProject}`}><a className="prev">Prev</a></Link>
+          <Link href={nav.prevProject}><a className="prev">Prev</a></Link>
           <Link href="/#All%20Projects"><a>All</a></Link>
-          <Link href="/[project]" as={`${nav.nextProject}`}><a className="next">Next</a></Link>
+          <Link href={nav.nextProject}><a className="next">Next</a></Link>
         </nav>
         <h1 className="minerva">{title}</h1>
         <h2 className="medium">{displayCategory}</h2>

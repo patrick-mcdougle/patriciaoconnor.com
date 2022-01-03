@@ -76,7 +76,7 @@ function IndexPage({ projects, projectCategories }) {
         </nav>
         <div className="projects">
           {filteredProjects.map((project) => (
-            <Link key={project.url} href="/[project]" as={project.url}>
+            <Link key={project.url} href={project.url}>
               <a className="project">
                 <img width="400" height="400" src={project.thumbnail} alt="" />
                 <h1 className="minerva">{project.title}</h1>
