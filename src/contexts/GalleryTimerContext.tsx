@@ -1,13 +1,24 @@
-import React, { createContext, useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import React, {
+  createContext,
+  PropsWithChildren,
+  useEffect,
+  useState,
+} from 'react';
 
-const GalleryTimerContext = createContext(0);
+const GalleryTimerContext = createContext(false);
 
-export function GalleryTimerContextProvider({ children, interval }) {
+interface GalleryTimerContextProviderProps {
+  interval?: number;
+}
+
+export function GalleryTimerContextProvider({
+  children,
+  interval,
+}: PropsWithChildren<GalleryTimerContextProviderProps>) {
   const [ticker, setTicker] = useState(false);
 
   useEffect(() => {
-    let intervalId;
+    let intervalId: number | undefined;
     function setUpInterval() {
       if (!intervalId) {
         intervalId = window.setInterval(() => {
@@ -35,14 +46,6 @@ export function GalleryTimerContextProvider({ children, interval }) {
     </GalleryTimerContext.Provider>
   );
 }
-
-GalleryTimerContextProvider.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-  interval: PropTypes.number,
-};
 
 GalleryTimerContextProvider.defaultProps = {
   interval: 3000,

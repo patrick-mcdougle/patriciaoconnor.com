@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 import React, {
   useContext,
   useEffect,
@@ -7,11 +6,20 @@ import React, {
   useState,
 } from 'react';
 import GalleryTimerContext from './contexts/GalleryTimerContext';
+import { StandardImageData } from '../pages/[project]';
 
-function Carousel({ items }) {
+export interface LinkableImageData extends StandardImageData {
+  link?: string;
+}
+
+interface CarouselProps {
+  items: LinkableImageData[];
+}
+
+function Carousel({ items }: CarouselProps) {
   const changeTrigger = useContext(GalleryTimerContext);
   const [height, setHeight] = useState(0);
-  const slidesRef = useRef([]);
+  const slidesRef = useRef<(HTMLLIElement | undefined)[]>([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -28,7 +36,7 @@ function Carousel({ items }) {
     setHeight(() => {
       let maxHeight = 0;
       slidesRef.current.forEach((slide) => {
-        maxHeight = Math.max(maxHeight, slide.scrollHeight);
+        maxHeight = Math.max(maxHeight, slide?.scrollHeight ?? maxHeight);
       });
       return maxHeight;
     });
@@ -36,7 +44,7 @@ function Carousel({ items }) {
 
   useEffect(checkSizes, [slidesRef]);
   useEffect(() => {
-    let rafId;
+    let rafId: number;
     function handleResize() {
       if (rafId) {
         window.cancelAnimationFrame(rafId);
@@ -55,28 +63,23 @@ function Carousel({ items }) {
   return (
     <ul className="slides" style={{ height }}>
       {items.map((item, index) => {
-        let img = <img src={item.src} alt={item.alt ?? ''} onLoad={checkSizes}/>;
+        let img = <img src={item.src} alt={item.alt ?? ''} onLoad={checkSizes} />;
         if (item.link) {
           img = <Link href={item.link}><a>{img}</a></Link>;
         }
         if (index === activeIndex) {
           return (
-            <li key={index} ref={(el) => { slidesRef.current[index] = el; }} className="active">
+            <li key={index} ref={(el) => { slidesRef.current[index] = el ?? undefined; }} className="active">
               {img}
             </li>
           );
         }
-        return <li key={index} ref={(el) => { slidesRef.current[index] = el; }}>{img}</li>;
+        return (
+          <li key={index} ref={(el) => { slidesRef.current[index] = el ?? undefined; }}>{img}</li>
+        );
       })}
     </ul>
   );
 }
-
-Carousel.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    alt: PropTypes.string,
-  })).isRequired,
-};
 
 export default Carousel;

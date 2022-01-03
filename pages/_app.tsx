@@ -1,11 +1,11 @@
+import { AppProps } from 'next/app';
 import Head from 'next/head';
-import PropTypes from 'prop-types';
 import React from 'react';
 import '../src/index.scss';
 import { IsMobileContextProvider } from '../src/contexts/IsMobileContext';
 import { GalleryTimerContextProvider } from '../src/contexts/GalleryTimerContext';
 
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <GalleryTimerContextProvider>
       <Head>
@@ -18,9 +18,3 @@ export default function MyApp({ Component, pageProps }) {
     </GalleryTimerContextProvider>
   );
 }
-
-MyApp.propTypes = {
-  Component: PropTypes.func.isRequired,
-  // eslint-disable-next-line react/forbid-prop-types
-  pageProps: PropTypes.object.isRequired,
-};
