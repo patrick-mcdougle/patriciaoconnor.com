@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export default function Bio({ children, moreIntro }) {
+export default function Bio() {
   return (
     <>
       <div>
@@ -9,7 +9,13 @@ export default function Bio({ children, moreIntro }) {
       <div>
         <h1 className="minerva">hello.</h1>
         <p className="intro">I&rsquo;m a Design Director with an expertise in logo and brand design, illustration, and lettering.</p>
-        {moreIntro ? moreIntro : null}
+        <p>
+          My background in Architecture means I approach design from a truly graphic perspective.
+          For me, everything begins with shape, proportion, and balance. This is why I have a
+          particular connection to Art Deco design. It’s bold and modern, while being harmonious
+          and balanced. I believe in simple designs with a high attention to detail and a touch of
+          whimsy.
+        </p>
         <h2>In Brief</h2>
         <dl>
           <dt className="bold">Reads: </dt>
@@ -45,7 +51,10 @@ export default function Bio({ children, moreIntro }) {
           <dt className="bold">Happy Place: </dt>
           <dd>Scandinavia (this photo was taken in <a target="_blank" href="https://goo.gl/maps/91KJRnVH2vuntkJr6">Solvorn, Norway</a>)</dd>
         </dl>
-        {children}
+        <h2>Stay In Touch</h2>
+        <p>
+          <a href="mailto:patricia@patriciaoconnor.com">Email</a>
+        </p>
       </div>
     </>
   );

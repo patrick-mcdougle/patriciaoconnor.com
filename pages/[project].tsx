@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Carousel from '../src/Carousel';
 import Layout from '../src/layout';
-import { getProjectCategories, getProjectData } from '../src/cms/utils';
+import { getProjectData } from '../src/cms/utils';
 
 function ProjectElement({ element }) {
   switch (element.type) {
@@ -51,7 +51,6 @@ function ProjectElement({ element }) {
 
 function ProjectPage({
   project,
-  projectCategories,
 }) {
   const {
     credits,
@@ -64,15 +63,15 @@ function ProjectPage({
   const creditKeys = Object.keys(credits);
 
   return (
-    <Layout projectCategories={projectCategories}>
+    <Layout>
       <Head>
         <title>{`Patricia O'Connor | ${title}`}</title>
       </Head>
       <div id="project-details">
         <nav className="project-nav">
-          <Link href="/[project]" as={`${nav.prevProject}`}><a className="prev">Prev</a></Link>
+          <Link href={nav.prevProject}><a className="prev">Prev</a></Link>
           <Link href="/#All%20Projects"><a>All</a></Link>
-          <Link href="/[project]" as={`${nav.nextProject}`}><a className="next">Next</a></Link>
+          <Link href={nav.nextProject}><a className="next">Next</a></Link>
         </nav>
         <h1 className="minerva">{title}</h1>
         <h2 className="medium">{displayCategory}</h2>
@@ -112,7 +111,6 @@ ProjectPage.propTypes = {
     }).isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
-  projectCategories: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export async function getStaticProps({ params }) {
@@ -129,7 +127,6 @@ export async function getStaticProps({ params }) {
         },
         ...projects[projectIndex],
       },
-      projectCategories: await getProjectCategories(),
     },
   };
 }

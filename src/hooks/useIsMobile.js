@@ -28,7 +28,7 @@ export function useWindowDims() {
 
 function useIsMobile() {
   const { width } = useWindowDims();
-  return width && width <= mobileBreakpoint;
+  return !(width && width >= mobileBreakpoint);
 }
 
 export default useIsMobile;
