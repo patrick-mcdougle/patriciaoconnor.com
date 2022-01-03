@@ -1,0 +1,18 @@
+{
+  "title": "Charli & Dixie D’Amelio",
+  "category": ["Editorial"],
+  "displayCategory": "Cover Story",
+  "thumbnail": "imgs/POC_CoverStory_DAmelio/POC_CoverStory_DAmelio_Thumbnail.jpg",
+  "descriptionHTML": "<p>“Charli & Dixie D’Amelio: Unfiltered, Sisterly Secrets From the Most Famous Teens on the Internet” by Kristin Harris</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/celebrity/charli-damelio-dixie-damelio-2020-interview-47968295\">Read the Feature Story</a>",
+  "credits": {
+    "My Role": "Story Design Direction; Page Build; Social Media and Marketing Graphics"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_CoverStory_DAmelio/POC_CoverStory_DAmelio_Cover_Tall.jpg", "class": "tall" }
+      ]
+    }
+  ]
+}

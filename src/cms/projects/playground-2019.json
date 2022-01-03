@@ -1,0 +1,33 @@
+{
+  "title": "Play/Ground 2019",
+  "category": ["Branding"],
+  "displayCategory": "Event",
+  "thumbnail": "imgs/POC_PG_2019/PS19_PG_Staff_Social_IG_03.jpg",
+  "descriptionHTML": "<p>Play/Ground is an immersive and interactive festival aspiring to help women power their \"happily ever afters\" &mdash; whatever they may be. The extravaganza features distinct villages offering attendees full access to keynote discussions with A-list celebrities and pop-culture luminaries, live fitness and wellness activities, art installations, a shopping bazaar, a beauty carnival, and so much more.</p><h2 class=\"medium\">Press</h2><p><a target=\"_blank\" href=\"https://www.teenvogue.com/story/camila-mendes-to-lil-nas-x-here-are-this-weekends-best-looks-from-our-favorites-stars\">Teen Vogue</a><br /><a target=\"_blank\" href=\"https://okmagazine.com/photos/milo-ventimiglia-amanda-seyfried-snuggle-puppies-art-of-racing-in-the-rain-photos/\">OK Magazine</a><br /><a target=\"_blank\" href=\"https://www.hollywoodreporter.com/news/mandy-moore-camila-mendes-talk-overcoming-rejection-body-image-struggles-1220592\">Hollywood Magazine</a></p>",
+  "credits": {
+    "My Role": "Icon Set, Social & Editorial Graphics, VIP Photo Backdrops, Merchandise",
+    "Creative Direction": "Jenny Anna Ung",
+    "Additional Support From": "POPSUGAR Design Team, The Gathery"
+  },
+  "elements": [{
+    "type": "scroll-gallery",
+    "items": [
+      { "src": "imgs/POC_PG_2019/PS19_PG_Staff_Social_IG_03.jpg" }
+    ]
+  },
+  {
+    "type": "full-bleed",
+    "desktop_img": "imgs/POC_PG_2019/POC_PG_2019_Hero.jpg"
+  },
+  {
+    "type": "scroll-gallery",
+    "items": [
+      { "src": "imgs/POC_PG_2019/POC_PG_Social.jpg" },
+      { "src": "imgs/POC_PG_2019/POC_PSPG_2019_Square.jpg" }
+    ]
+  },
+  {
+    "type": "full-bleed",
+    "desktop_img": "imgs/POC_PG_2019/POC_PG_2019_Icons.jpg"
+  }]
+}

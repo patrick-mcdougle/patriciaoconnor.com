@@ -2,6 +2,8 @@
   margin: 5em auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
 
   @media (max-width: $mobile-breakpoint) {
     display: none;
@@ -15,13 +17,13 @@
     transition: color $animation-timing;
 
     &.active {
-      color: cadetblue;
+      color: #1880b0;
       padding-bottom: 3px;
-      border-bottom: 2px solid cadetblue;
+      border-bottom: 2px solid #1880b0;
     }
 
-    &:hover {
-      color: cadetblue;
+    &:not(.active):hover {
+      color: #5eb4dc;
     }
   }
 }
@@ -32,14 +34,19 @@
 
 .projects {
   display: flex;
-  justify-content: space-evenly;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1600px;
+  row-gap: 4em;
+  column-gap: 3em;
+  padding: 0 3em 3em;
+
   flex-wrap: wrap;
   min-height: 100vh;
 
   .project {
     display: block;
     text-align: center;
-    margin: 0 .5em 1em;
     max-width: 400px;
 
     h1 {

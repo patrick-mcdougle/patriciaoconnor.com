@@ -1,4 +1,6 @@
+.next/
 dist/
-imgs/
 node_modules/
+out/
+public/
 todo.txt

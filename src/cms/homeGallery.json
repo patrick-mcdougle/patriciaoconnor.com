@@ -1,0 +1,11 @@
+[
+  { "src": "imgs/POC_CoverStory_Marsai_Hero.jpg",
+    "link": "cover-story-marsai-martin"
+  },
+  { "src": "imgs/POC_HB/POC_HB_BC_1680x1080.jpg",
+    "link": "hibou-bijou" },
+  { "src": "imgs/POC_PSPG_2019_Hero.jpg",
+    "link": "playground-2019" },
+  { "src": "imgs/POC_Pride_2019_1680x1080.jpg", "alt": "An iPad on a work surface displaying an editorial website",
+    "link": "proud-of-us" }
+]

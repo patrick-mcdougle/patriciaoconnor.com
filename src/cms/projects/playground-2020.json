@@ -1,0 +1,17 @@
+{
+  "title": "Play/Ground 2020",
+  "category": ["Branding"],
+  "displayCategory": "Event",
+  "thumbnail": "imgs/POC_PG_2020/POC_PSPG_2020_Logo_Square.jpg",
+  "descriptionHTML": "<p>Play/Ground is an immersive and interactive festival, and this year it’s &#8220;Game On!&#8221; The extravaganza features distinct villages offering attendees full access to keynote discussions with A-list celebrities and pop-culture luminaries, live fitness and wellness activities, art installations, a shopping bazaar, a beauty carnival, and so much more.</p>",
+  "credits": {
+    "My Role": "Logo Design, Branding",
+    "Creative Direction": "Jenny Anna Ung"
+  },
+  "elements": [{
+    "type": "scroll-gallery",
+    "items": [
+      { "src": "imgs/POC_PG_2020/POC_PSPG_2020_Logo_Square.jpg" }
+    ]
+  }]
+}

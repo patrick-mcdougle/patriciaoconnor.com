@@ -1,0 +1,18 @@
+{
+  "title": "Becky G",
+  "category": ["Editorial"],
+  "displayCategory": "Cover Story",
+  "thumbnail": "imgs/POC_CoverStory_BeckyG/POC_CoverStory_BeckyG_Thumbnail.jpg",
+  "descriptionHTML": "<p>“Becky G: The Pop Star — and Activist — We Need Right Now” by Monica Sisavat</p><p>How the global pop star is getting out the vote.</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/celebrity/becky-g-interview-2020-47737611\">Read the Feature Story</a>",
+  "credits": {
+    "My Role": "Story Design Direction; Page Build; Social Media and Marketing Graphics"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_CoverStory_BeckyG/POC_CoverStory_BeckyG_Cover_Tall.jpg", "class": "tall" }
+      ]
+    }
+  ]
+}

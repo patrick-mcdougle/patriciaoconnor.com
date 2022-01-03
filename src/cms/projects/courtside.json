@@ -1,0 +1,21 @@
+{
+  "title": "Courtside",
+  "category": ["Illustration"],
+  "displayCategory": "Illustration",
+  "thumbnail": "imgs/Courtside/POC_Courtside_Thumbnail.jpg",
+  "descriptionHTML": "<p>This series explores the essence of sport and how a single line or curve can convey its universal language. Sport reminds us that the most important thing is not to win but to take part. Just as the most important thing in life is not the triumph, but the struggle.</p>",
+  "credits": {},
+  "elements": [{
+    "type": "scroll-gallery",
+    "items": [
+      { "src": "imgs/Courtside/POC_Courtside_01_Tall.jpg", "class": "tall" },
+      { "src": "imgs/Courtside/POC_Courtside_02_Tall.jpg", "class": "tall" },
+      { "src": "imgs/Courtside/POC_Courtside_03_Tall.jpg", "class": "tall" },
+      { "src": "imgs/Courtside/POC_Courtside_04_Tall.jpg", "class": "tall" },
+      { "src": "imgs/Courtside/POC_Courtside_05_Tall.jpg", "class": "tall" },
+      { "src": "imgs/Courtside/POC_Courtside_06_Tall.jpg", "class": "tall" },
+      { "src": "imgs/Courtside/POC_Courtside_07_Tall.jpg", "class": "tall" },
+      { "src": "imgs/Courtside/POC_Courtside_08_Tall.jpg", "class": "tall" }
+    ]
+  }]
+}
