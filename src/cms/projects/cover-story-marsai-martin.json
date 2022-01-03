@@ -15,6 +15,10 @@
       ]
     },
     {
+      "type": "full-bleed-video",
+      "videoFile": "imgs/POC_CoverStory_Marsai/POC_CoverStory_Marsai_Video_FullBleed.mp4"
+    },
+    {
       "type": "scroll-gallery",
       "items": [
         {

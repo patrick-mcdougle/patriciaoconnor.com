@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Carousel from '../src/Carousel';
 import Layout from '../src/layout';
-import { getProjectCategories, getProjectData } from '../src/cms/utils';
+import { getProjectData } from '../src/cms/utils';
 
 function ProjectElement({ element }) {
   switch (element.type) {
@@ -51,7 +51,6 @@ function ProjectElement({ element }) {
 
 function ProjectPage({
   project,
-  projectCategories,
 }) {
   const {
     credits,
@@ -64,7 +63,7 @@ function ProjectPage({
   const creditKeys = Object.keys(credits);
 
   return (
-    <Layout projectCategories={projectCategories}>
+    <Layout>
       <Head>
         <title>{`Patricia O'Connor | ${title}`}</title>
       </Head>
@@ -112,7 +111,6 @@ ProjectPage.propTypes = {
     }).isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
-  projectCategories: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export async function getStaticProps({ params }) {
@@ -129,7 +127,6 @@ export async function getStaticProps({ params }) {
         },
         ...projects[projectIndex],
       },
-      projectCategories: await getProjectCategories(),
     },
   };
 }

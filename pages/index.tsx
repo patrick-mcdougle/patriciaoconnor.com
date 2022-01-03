@@ -1,21 +1,26 @@
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import PropTypes from 'prop-types';
 import React, {
   useContext, useEffect, useMemo, useRef, useState,
 } from 'react';
 import Layout from '../src/layout';
 import Carousel from '../src/Carousel';
 import homeGalleryItems from '../src/cms/homeGallery.json';
-import { getProjectData, getProjectCategoriesFromProjects } from '../src/cms/utils';
+import { getProjectData, getProjectCategoriesFromProjects, Project } from '../src/cms/utils';
 import IsMobileContext from '../src/contexts/IsMobileContext';
 
-function IndexPage({ projects, projectCategories }) {
+interface IndexProps {
+  projects: Project[];
+  projectCategories: string[];
+}
+
+function IndexPage({ projects, projectCategories }: IndexProps) {
   const router = useRouter();
   const [currentHash, setCurrentHash] = useState('');
   const [filter, setFilter] = useState(() => projectCategories[0]);
-  const jumpElementRef = useRef();
+  const jumpElementRef = useRef<HTMLSpanElement>();
   const isMobile = useContext(IsMobileContext);
 
   useEffect(() => {
@@ -55,7 +60,7 @@ function IndexPage({ projects, projectCategories }) {
   }, [filter, projects]);
 
   return (
-    <Layout projectCategories={projectCategories}>
+    <Layout>
       <Head>
         <title>Patricia O&rsquo;Connor</title>
       </Head>
@@ -64,7 +69,7 @@ function IndexPage({ projects, projectCategories }) {
           <Carousel items={homeGalleryItems} />
         </div>
       ) : null }
-      <span id="Projects" ref={jumpElementRef} aria-hidden="true" style={{ position: 'relative', top: 'calc(-50px - 4em)' }} />
+      <span id="All%20Projects" ref={jumpElementRef} aria-hidden="true" style={{ position: 'relative', top: 'calc(-50px - 4em)' }} />
       <div className="projects-container">
         <nav className="projects-nav">
           {projectCategories.map((category) => {
@@ -90,19 +95,8 @@ function IndexPage({ projects, projectCategories }) {
   );
 }
 
-IndexPage.propTypes = {
-  projects: PropTypes.arrayOf(PropTypes.shape({
-    url: PropTypes.string.isRequired,
-    category: PropTypes.arrayOf(PropTypes.string).isRequired,
-    displayCategory: PropTypes.string.isRequired,
-    thumbnail: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  })).isRequired,
-  projectCategories: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
-
-export async function getStaticProps() {
-  const projects = await getProjectData();
+export const getStaticProps: GetStaticProps<IndexProps> = async function getStaticProps() {
+  const projects: Project[] = await getProjectData();
 
   return {
     props: {
@@ -110,6 +104,6 @@ export async function getStaticProps() {
       projectCategories: getProjectCategoriesFromProjects(projects),
     },
   };
-}
+};
 
 export default IndexPage;

@@ -127,88 +127,9 @@ body {
       line-height: $nav-height;
     }
 
-    #primary-nav a {
-      padding: 0 .5em;
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      &:last-child {
-        padding-right: 0;
-      }
-    }
-  }
-
-  #subnav-container {
-    max-width: $mobile-max-width;
-    margin: 0 auto;
-    height: 0;
-    overflow: hidden;
-    position: relative;
-
-    #subnav-work {
-      display: flex;
-      align-items: center;
-      gap: 1em;
-      height: calc(100vh - #{$nav-height});
-      flex-direction: column;
-      flex-wrap: wrap;
-
-      @media(max-width: $mobile-breakpoint) {
-        > * {
-          line-height: 2em;
-        }
-      }
-
-      @media(min-width: $mobile-breakpoint) {
-        height: 0;
-        justify-content: space-evenly;
-        flex-direction: row;
-
-        &.active {
-          height: auto;
-          padding: 2em 6em 4em;
-        }
-      }
-
-      a {
-        font-size: 1.5em;
-      }
-    }
-
-    #subnav-bio {
-      display: flex;
-      justify-content: space-around;
-
-      h2 {
-        margin: 2em 0 1em;
-      }
-
-      > *:first-child {
-        width: 45%;
-      }
-
-      > *:last-child {
-        width: 35%;
-      }
-    }
-
-    > * {
-      height: 0;
-      overflow: hidden;
-      opacity: 0;
-      -webkit-transition: opacity $animation-timing;
-      transition: opacity $animation-timing;
-
-      &.active {
-        height: auto;
-        padding: 3em 0 5em;
-      }
-
-      &.animated {
-        opacity: 1;
-      }
+    #primary-nav {
+      display: inline-flex;
+      gap: 2em;
     }
   }
 }
@@ -225,10 +146,6 @@ body {
   > nav {
     width: 55%;
     margin: 0 auto 3.5em;
-    //@media (min-width: $mobile-breakpoint) {
-    //  width: 18%;
-    //  margin: 0 0 3em;
-    //}
     display: flex;
     justify-content: space-between;
 
@@ -251,17 +168,7 @@ body {
 
   h1, h2, p {
     text-align: center;
-    //@media (min-width: $mobile-breakpoint) {
-    //  text-align: left;
-    //}
   }
-
-  //@media (min-width: $mobile-breakpoint) {
-  //  > *:not(nav) {
-  //    width: 40%;
-  //    padding-right: 120px;
-  //  }
-  //}
 }
 
 #__next > *:not(.full-bleed):not(#nav-container):not(.projects-container) {
