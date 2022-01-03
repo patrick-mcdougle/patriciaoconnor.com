@@ -1,0 +1,46 @@
+{
+  "title": "Proud Of Us",
+  "category": ["Editorial"],
+  "displayCategory": "Editorial Feature",
+  "thumbnail": "imgs/Portfolio_Pride_2019_01.jpg",
+  "descriptionHTML": "<p>To commemorate 50 years since Stonewall and celebrate Pride Month 2019, POPSUGAR created an editorial destination to elevate LGBTQ+ voices. These editorial features foster honest conversations about sexuality and gender, and honor individuality while recognizing the beauty in community.</p><p><a href=\"https://www.popsugar.com/love/Pride-Month-2019-46174401\">Visit the Destination</a></p>",
+  "credits": {
+    "My Role": "Art Direction, Web, Editorial, & Social Design"
+  },
+  "elements": [{
+    "type": "scroll-gallery",
+    "items": [
+      {
+        "src": "imgs/Portfolio_Pride_2019_01.jpg",
+        "alt": "Image of an iPad on a work surface displaying an editorial website"
+      }
+    ]
+  },
+  {
+    "type": "full-bleed",
+    "desktop_img": "imgs/Pride_2019_Hero.jpg",
+    "mobile_img": "imgs/PS19_Pride_IG_1456x1456.jpg",
+    "alt": "POPSUGAR Proud Of Us Design"
+  },
+  {
+    "type": "scroll-gallery",
+    "items": [
+      {
+        "src": "imgs/Portfolio_Pride_2019_03.jpg",
+        "alt": "Image of an iPhone showing an instagram post"
+      },
+      {
+        "type": "carousel",
+        "items": [
+          { "src": "imgs/Roundtable/PS19_Pride_Hub_Roundtable_Belita_01.jpg", "alt": "Belita" },
+          { "src": "imgs/Roundtable/PS19_Pride_Hub_Roundtable_Angel_02.jpg", "alt": "Angel" },
+          { "src": "imgs/Roundtable/PS19_Pride_Hub_Roundtable_Kyle_03.jpg", "alt": "Kyle" },
+          { "src": "imgs/Roundtable/PS19_Pride_Hub_Roundtable_Rizi_04.jpg", "alt": "Rizi" },
+          { "src": "imgs/Roundtable/PS19_Pride_Hub_Roundtable_Sable_05.jpg", "alt": "Sable" },
+          { "src": "imgs/Roundtable/PS19_Pride_Hub_Roundtable_Jazzmun_06.jpg", "alt": "Jazzmun" }
+        ]
+      },
+      { "src": "imgs/PS19_Pride_Feature_DW_Thumbnail_1456x1456.jpg", "alt": "Stylized image of Asia Kate Dillon and Lachlan Watson" }
+    ]
+  }]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Devery Jacobs",
+  "category": ["Editorial"],
+  "displayCategory": "Cover Story",
+  "thumbnail": "imgs/POC_CoverStory_Devery/POC_CoverStory_Devery_Thumbnail.jpg",
+  "descriptionHTML": "<p>“Devery Jacobs: Headstrong and Heart First” by Iyana Robertson</p><p>The 28-year-old star of FX on Hulu's <strong>Reservation Dogs</strong> is ready to light the path forward for young Native storytellers in Hollywood.</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/celebrity/devery-jacobs-talks-reservation-dogs-native-stories-48492047\">Read the Feature Story</a>",
+  "credits": {
+    "My Role": "Story Design Direction; Page Build; Video Graphics Package Design; Social Media and Marketing Graphics"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_CoverStory_Devery/POC_CoverStory_Devery_Cover_Tall.jpg", "class": "tall" }
+      ]
+    }
+  ]
+}

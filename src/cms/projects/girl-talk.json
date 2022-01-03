@@ -1,0 +1,55 @@
+{
+  "title": "Girl Talk",
+  "category": ["Branding"],
+  "displayCategory": "Event",
+  "thumbnail": "imgs/POC_GirlTalk/POC_GirlTalk_Thumbnail.jpg",
+  "descriptionHTML": "<p>POPSUGAR featuring Michelle Obama and the Girls Opportunity Alliance brought viewers along for inspiring conversations, educational and fun Q&As, and a special musical performance: all in support of girls’ education and empowerment.</p><h2 class=\"medium\">HOSTED BY</h2><p>Sofia Wylie</p><h2 class=\"medium\">WITH SPECIAL GUESTS</h2><p>Lilly Singh, Kelly Clarkson, Marsai Martin, Maitreyi Ramakrishnan</p><h2 class=\"medium\">AND SPECIAL APPEARANCES BY</h2><p>Alicia Keys, Amy Poehler, Andra Day, Angélique Kidjo, Becky G, Chiwetel Ejiofor, Demi Lovato, Dove Cameron, Ego Nwodim, Julia Roberts, Kristen Bell, Lana Condor, Madison Reyes, Meryl Streep, Millie Bobby Brown, Milo Ventimiglia, Naomi Osaka, Natalie Portman, Orlando Bloom, Shaun Robinson, Shonda Rhimes, and Storm Reid</p><p><a target=\"_blank\" href=\"https://popsugargirltalk.splashthat.com/\">Watch the Event</a></p>",
+  "credits": {
+    "My Role": "Event Branding, Video Graphics Package Design, Social Media & Marketing Graphics"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_GirlTalk/POC_GirlTalk_Thumbnail.jpg" }
+      ]
+    },
+    {
+      "type": "full-bleed-video",
+      "videoFile": "imgs/POC_GirlTalk/POC_GirlTalk_Video_FullBleed.MP4"
+    },
+    {
+      "type": "scroll-gallery",
+      "items": [
+        {
+          "type": "carousel",
+          "background": "#002875",
+          "items": [
+            { "src": "imgs/POC_GirlTalk/Carousel_02/POC_GirlTalk_C2_01.jpg" },
+            { "src": "imgs/POC_GirlTalk/Carousel_02/POC_GirlTalk_C2_02.jpg" },
+            { "src": "imgs/POC_GirlTalk/Carousel_02/POC_GirlTalk_C2_03.jpg" },
+            { "src": "imgs/POC_GirlTalk/Carousel_02/POC_GirlTalk_C2_04.jpg" },
+            { "src": "imgs/POC_GirlTalk/Carousel_02/POC_GirlTalk_C2_05.jpg" },
+            { "src": "imgs/POC_GirlTalk/Carousel_02/POC_GirlTalk_C2_06.jpg" },
+            { "src": "imgs/POC_GirlTalk/Carousel_02/POC_GirlTalk_C2_07.jpg" },
+            { "src": "imgs/POC_GirlTalk/Carousel_02/POC_GirlTalk_C2_08.jpg" },
+            { "src": "imgs/POC_GirlTalk/Carousel_02/POC_GirlTalk_C2_09.jpg" }
+          ]
+        },
+        {
+          "type": "carousel",
+          "background": "#002875",
+          "items": [
+            { "src": "imgs/POC_GirlTalk/Carousel_01/POC_GirlTalk_C1_01.jpg" },
+            { "src": "imgs/POC_GirlTalk/Carousel_01/POC_GirlTalk_C1_02.jpg" },
+            { "src": "imgs/POC_GirlTalk/Carousel_01/POC_GirlTalk_C1_03.jpg" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "full-bleed",
+      "desktop_img": "imgs/POC_GirlTalk/POC_GirlTalk_Image_01_FullBleed.jpg"
+    }
+  ]
+}

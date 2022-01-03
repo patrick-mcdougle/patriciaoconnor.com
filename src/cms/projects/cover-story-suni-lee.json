@@ -1,0 +1,39 @@
+{
+  "title": "Suni Lee",
+  "category": ["Editorial"],
+  "displayCategory": "Cover Story",
+  "thumbnail": "imgs/POC_CoverStory_Suni/POC_CoverStory_Suni_Thumbnail.jpg",
+  "descriptionHTML": "<p>“All Eyes on Suni Lee” by Yerin Kim</p><p>The 18-year old on life beyond olympic gold.</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/fitness/suni-lee-olympics-interview-48564671\">Read the Feature Story</a>",
+  "credits": {
+    "My Role": "Story Design Direction; Page Build; Video Graphics Package Design; Social Media and Marketing Graphics"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_CoverStory_Suni/POC_CoverStory_Suni_Cover_Tall.jpg", "class": "tall" }
+      ]
+    },
+    {
+      "type": "full-bleed-video",
+      "videoFile": "imgs/POC_CoverStory_Suni/POC_CoverStory_Suni_Video_FullBleed.mp4"
+    },
+    {
+      "type": "scroll-gallery",
+      "items": [
+        {
+          "src": "imgs/POC_CoverStory_Suni/POC_CoverStory_Suni_Image_01_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Suni/POC_CoverStory_Suni_Image_02_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Suni/POC_CoverStory_Suni_Image_03_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Suni/POC_CoverStory_Suni_Image_04_Tall.jpg", "class": "tall"
+        }
+      ]
+    }
+  ]
+}

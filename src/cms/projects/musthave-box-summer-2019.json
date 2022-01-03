@@ -1,0 +1,37 @@
+{
+  "title": "Must Have Box Summer 2019",
+  "category": ["Print & Packaging"],
+  "displayCategory": "Print & Packaging",
+  "thumbnail": "imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_02.jpg",
+  "descriptionHTML": "<p>Must Have is a quarterly subscription box of curated, seasonal items. From covetable cult classics to rising indie stars in fashion, beauty, home, fitness, food, and more. Each box will be a happy surprise.</p>",
+  "credits": {
+    "My Role": "Box Design & Illustration, Booklet, Social & Marketing Design",
+    "Art Direction": "Jae Payne",
+    "Photography": "<a href=\"http://delriophotography.com\">Maria Del Rio</a>"
+  },
+  "elements": [{
+    "type": "full-bleed",
+    "desktop_img": "imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Hero_Desktop_2.jpg",
+    "mobile_img": "imgs/POC_MH_Summer_2019/MH_Summer_2019_Hero_Square.jpg"
+  },
+  {
+    "type": "scroll-gallery",
+    "items": [
+      { "src": "imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_02.jpg" },
+      {
+        "type": "carousel",
+        "items": [
+          { "src": "imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Carousel/POC_MH_Summer_Product_Carousel_01.jpg" },
+          { "src": "imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Carousel/POC_MH_Summer_Product_Carousel_02.jpg" },
+          { "src": "imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Carousel/POC_MH_Summer_Product_Carousel_03.jpg" },
+          { "src": "imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Carousel/POC_MH_Summer_Product_Carousel_04.jpg" },
+          { "src": "imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_Carousel/POC_MH_Summer_Product_Carousel_05.jpg" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "full-bleed",
+    "desktop_img": "imgs/POC_MH_Summer_2019/POC_MH_Summer_2019_04.gif"
+  }]
+}

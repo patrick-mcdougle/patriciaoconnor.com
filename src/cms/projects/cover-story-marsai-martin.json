@@ -1,0 +1,44 @@
+{
+  "title": "Marsai Martin",
+  "category": ["Editorial"],
+  "displayCategory": "Cover Story",
+  "thumbnail": "imgs/POC_CoverStory_Marsai/POC_CoverStory_Marsai_Thumbnail.jpg",
+  "descriptionHTML": "<p>“Marsai Martin: Forging a Fearless Future” by Brea Cubit</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/celebrity/marsai-martin-talks-gen-z-black-ish-breaking-records-48096975\">Read the Feature Story</a>",
+  "credits": {
+    "My Role": "Story Design Direction; Page Build; Video Graphics Package Design; Social Media and Marketing Graphics"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_CoverStory_Marsai/POC_CoverStory_Marsai_Cover_Tall.jpg", "class": "tall" }
+      ]
+    },
+    {
+      "type": "scroll-gallery",
+      "items": [
+        {
+          "src": "imgs/POC_CoverStory_Marsai/POC_CoverStory_Marsai_Image_01_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Marsai/POC_CoverStory_Marsai_Image_02_Tall.jpg", "class": "tall"
+        }
+      ]
+    },
+    {
+      "type": "full-bleed",
+      "desktop_img": "imgs/POC_CoverStory_Marsai/POC_CoverStory_Marsai_Image_05_FullBleed.jpg"
+    },
+    {
+      "type": "scroll-gallery",
+      "items": [
+        {
+          "src": "imgs/POC_CoverStory_Marsai/POC_CoverStory_Marsai_Image_03_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Marsai/POC_CoverStory_Marsai_Image_04_Tall.jpg", "class": "tall"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Glow",
+  "category": ["Branding"],
+  "displayCategory": "Branding",
+  "thumbnail": "imgs/POC_GLOW/POC_Glow_Logo_Square_Solid.jpg",
+  "descriptionHTML": "<p>Glow is an Etsy-style online marketplace where you can shop for workout videos, healthy-living guides, meal plans, merchandise, and more from your favorite trainers and experts.</p>",
+  "credits": {
+    "My Role": "Logo & Brand Design"
+  },
+  "elements": [{
+    "type": "scroll-gallery",
+    "items": [
+      { "src": "imgs/POC_GLOW/POC_Glow_Logo_Square_Solid.jpg" },
+      { "src": "imgs/POC_GLOW/POC_Glow_01_Square.jpg" },
+      { "src": "imgs/POC_GLOW/POC_Glow_02_Square.jpg"}
+    ]
+  }]
+}
