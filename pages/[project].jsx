@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Carousel from '../src/Carousel';
 import Layout from '../src/layout';
-import {getProjectCategories, getProjectData} from '../src/cms/utils';
+import { getProjectCategories, getProjectData } from '../src/cms/utils';
 
 function ProjectElement({ element }) {
   switch (element.type) {
