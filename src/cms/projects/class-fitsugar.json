@@ -1,0 +1,29 @@
+{
+  "title": "Class Fitsugar",
+  "category": ["Branding"],
+  "displayCategory": "Branding",
+  "thumbnail": "imgs/CFS/POC_CFS_Thumbnail.jpg",
+  "descriptionHTML": "<p>Class FitSugar is the #1 real-time workout show online, offering a unique mix of fun, inspirational, and on-trend workouts you can do anytime, anywhere. With over 6 million YouTube subscribers, and over 275 million views in 2020 alone, Class Fitsugar relaunched in 2021 with a bold, new look.</p><p><a target=\"_blank\" href=\"https://www.facebook.com/ClassFitSugar/\">Class Fitsugar on Facebook</a><br/><a target=\"_blank\" href=\"https://www.youtube.com/c/POPSUGARFitness\">Class Fitsugar on YouTube</a></p>",
+  "credits": {
+    "My Role": "Logo Design and Branding"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        {
+          "type": "video",
+          "videoFile": "imgs/CFS/POC_CFS_Video_01_Tall.mp4"
+        },
+        {
+          "type": "carousel",
+          "items": [
+            { "src": "imgs/CFS/POC_CFS_C1_01.jpg"},
+            { "src": "imgs/CFS/POC_CFS_C1_02.jpg"}
+          ]
+        },
+        { "src": "imgs/CFS/POC_CFS_Image_02.jpg"}
+      ]
+    }
+  ]
+}
