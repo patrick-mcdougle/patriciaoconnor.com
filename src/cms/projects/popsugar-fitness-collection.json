@@ -5,7 +5,7 @@
   "thumbnail": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Thumbnail.jpg",
   "descriptionHTML": "<p>Created to power happy and healthy for all, this collection includes all the gear you need to get started, keep going, and level up during your fitness journey. Created in partnership with Fit For Life and available exclusively at Target.</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/fitness/shop-popsugar-fitness-gear-48633934\">Shop the Collection</a></p>",
   "credits": {
-    "My Role": "Product Development; Branding; Packaging and Custom Icon Set; Web Design; Social Media and Marketing Design"
+    "My Role": "Product Development; Branding; Art Direction; Packaging and Custom Icon Set; Web Design; Social Media and Marketing Design"
   },
   "elements": [
     {
@@ -22,7 +22,18 @@
       "type": "scroll-gallery",
       "items": [
         { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Image_02.jpg" },
-        { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Image_03.jpg" }
+        { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Image_03.jpg" },
+        {
+          "type": "carousel",
+          "items": [
+            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_01.jpg" },
+            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_02.jpg" },
+            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_03.jpg" },
+            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_04.jpg" },
+            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_05.jpg" },
+            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_06.jpg" }
+          ]
+        }
       ]
     }
   ]

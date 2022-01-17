@@ -28,10 +28,15 @@ interface ClassedImageData extends StandardImageData {
 interface CarouselItem {
   background?: string;
   items: LinkableImageData[];
-  type?: 'carousel';
+  type: 'carousel';
 }
 
-type ScrollGalleryItem = CarouselItem | ClassedImageData;
+interface VideoItem {
+  type: 'video';
+  videoFile: string;
+}
+
+type ScrollGalleryItem = CarouselItem | ClassedImageData | VideoItem;
 
 interface ScrollGallery {
   type: 'scroll-gallery';
@@ -59,8 +64,20 @@ function ProjectElement({ element }: ProjectElementProps) {
       return (
         <div className="scroll-gallery">
           {element.items.map((item, index) => {
-            if ('type' in item && item.type === 'carousel') {
-              return (<div className="carousel" style={item.background ? { background: item.background } : undefined} key={item.items[0].src}><Carousel items={item.items} /></div>);
+            if ('type' in item) {
+              switch (item.type) {
+                case 'carousel':
+                  return (
+                    <div className="carousel" style={item.background ? { background: item.background } : undefined} key={item.items[0].src}>
+                      <Carousel items={item.items} />
+                    </div>
+                  );
+                case 'video':
+                  return (<video src={item.videoFile} playsInline loop muted autoPlay controls />);
+                default:
+                  // @ts-ignore
+                  throw new Error(`Received an unknown type for scroll gallery item: ${item.type}`);
+              }
             }
             if (('src' in item)) {
               return (
