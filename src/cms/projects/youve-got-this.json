@@ -1,0 +1,20 @@
+{
+  "title": "You've Got This",
+  "category": [],
+  "displayCategory": "Art Direction",
+  "thumbnail": "imgs/POC_Youve_Got_This/POC_Scholastic_Thumbnail.jpg",
+  "descriptionHTML": "<p>In partnership with Scholastic, You’ve Got This is POPSUGAR’s first creative guidebook. Filled with writing prompts, feel-good quotes, and de-stressing methods, it’s designed to help readers find balance, build confidence, and power their happiness.</p>",
+  "credits": {
+    "My Role": "Art Direction; Social Media and Marketing Design"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_Youve_Got_This/POC_Scholastic_Image_01.jpg" },
+        { "src": "imgs/POC_Youve_Got_This/POC_Scholastic_Image_02.jpg" },
+        { "src": "imgs/POC_Youve_Got_This/POC_Scholastic_Image_03.jpg" }
+      ]
+    }
+  ]
+}
