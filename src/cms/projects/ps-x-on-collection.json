@@ -1,0 +1,31 @@
+{
+  "title": "POPSUGAR x Old Navy Collection",
+  "category": ["Branding", "Print & Packaging"],
+  "displayCategory": "Branding",
+  "thumbnail": "imgs/POC_PSxON/POC_PSxON_Thumbnail.jpg",
+  "descriptionHTML": "<p>To create their first-ever apparel line for tweens, Old Navy collaborated with POPSUGAR and the next generation of leaders. Designed with a spirit of optimism, the collection featured comfortable essentials and inclusive styles for the back‑to‑school and holiday seasons.</p>",
+  "credits": {
+    "My Role": "Logo Design and Branding; Social Media and Marketing Design"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        {
+          "type": "video",
+          "videoFile": "imgs/POC_PSxON/POC_PSxON_Video_01.mp4"
+        },
+        { "src": "imgs/POC_PSxON/POC_PSxON_Image_01.jpg" },
+        { "src": "imgs/POC_PSxON/POC_PSxON_Image_02.jpg" },
+        {
+          "type": "carousel",
+          "items": [
+            { "src": "imgs/POC_PSxON/POC_PSxON_C1_01.jpg" },
+            { "src": "imgs/POC_PSxON/POC_PSxON_C1_02.jpg" },
+            { "src": "imgs/POC_PSxON/POC_PSxON_C1_03.jpg" }
+          ]
+        }
+      ]
+    }
+  ]
+}
