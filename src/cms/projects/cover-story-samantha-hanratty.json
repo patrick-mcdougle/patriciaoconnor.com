@@ -1,0 +1,48 @@
+{
+  "title": "Samantha Hanratty",
+  "category": ["Editorial"],
+  "displayCategory": "Cover Story",
+  "thumbnail": "imgs/POC_CoverStory_Hanratty/POC_CoverStory_Hanratty_Thumbnail.jpg",
+  "descriptionHTML": "<p>“Yellowjackets’ Samantha Hanratty is No Misty Quigley” by Yesha Callahan</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/entertainment/samantha-hanratty-interview-cover-story-48798160\">Read the Feature Story</a>",
+  "credits": {
+    "My Role": "Story Design Direction; Page Build; Social Media and Marketing Graphics"
+  },
+  "elements": [
+    {
+      "type": "full-bleed-video",
+      "videoFile": "imgs/POC_CoverStory_Hanratty/POC_CoverStory_Hanratty_Video_FullBleed.mp4"
+    },
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_CoverStory_Hanratty/POC_CoverStory_Hanratty_Cover_Tall.jpg", "class": "tall" }
+      ]
+    },
+    {
+      "type": "scroll-gallery",
+      "items": [
+        {
+          "src": "imgs/POC_CoverStory_Hanratty/POC_CoverStory_Hanratty_Image_01_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Hanratty/POC_CoverStory_Hanratty_Image_02_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Hanratty/POC_CoverStory_Hanratty_Image_03_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Hanratty/POC_CoverStory_Hanratty_Image_04_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Hanratty/POC_CoverStory_Hanratty_Image_05_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Hanratty/POC_CoverStory_Hanratty_Image_06_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Hanratty/POC_CoverStory_Hanratty_Image_07_Tall.jpg", "class": "tall"
+        }
+      ]
+    }
+  ]
+}
