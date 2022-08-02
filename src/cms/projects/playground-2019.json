@@ -9,25 +9,22 @@
     "Creative Direction": "Jenny Anna Ung",
     "Additional Support From": "POPSUGAR Design Team, The Gathery"
   },
-  "elements": [{
-    "type": "scroll-gallery",
-    "items": [
-      { "src": "imgs/POC_PG_2019/PS19_PG_Staff_Social_IG_03.jpg" }
-    ]
-  },
-  {
-    "type": "full-bleed",
-    "desktop_img": "imgs/POC_PG_2019/POC_PG_2019_Hero.jpg"
-  },
-  {
-    "type": "scroll-gallery",
-    "items": [
-      { "src": "imgs/POC_PG_2019/POC_PG_Social.jpg" },
-      { "src": "imgs/POC_PG_2019/POC_PSPG_2019_Square.jpg" }
-    ]
-  },
-  {
-    "type": "full-bleed",
-    "desktop_img": "imgs/POC_PG_2019/POC_PG_2019_Icons.jpg"
-  }]
+  "elements": [
+    {
+      "type": "full-bleed",
+      "desktop_img": "imgs/POC_PG_2019/POC_PG_2019_Hero.jpg"
+    },
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_PG_2019/PS19_PG_Staff_Social_IG_03.jpg" },
+        { "src": "imgs/POC_PG_2019/POC_PG_Social.jpg" },
+        { "src": "imgs/POC_PG_2019/POC_PSPG_2019_Square.jpg" }
+      ]
+    },
+    {
+      "type": "full-bleed",
+      "desktop_img": "imgs/POC_PG_2019/POC_PG_2019_Icons.jpg"
+    }
+  ]
 }

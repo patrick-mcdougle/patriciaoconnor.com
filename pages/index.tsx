@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, {
-  useContext,
   useEffect,
   useLayoutEffect,
   useMemo,
@@ -11,10 +10,7 @@ import React, {
   useState,
 } from 'react';
 import Layout from '../src/layout';
-import Carousel from '../src/Carousel';
-import homeGalleryItems from '../src/cms/homeGallery.json';
 import { getProjectData, getProjectCategoriesFromProjects, Project } from '../src/cms/utils';
-import IsMobileContext from '../src/contexts/IsMobileContext';
 
 interface IndexProps {
   projects: Project[];
@@ -26,7 +22,6 @@ function IndexPage({ projects, projectCategories }: IndexProps) {
   const [currentHash, setCurrentHash] = useState('');
   const [filter, setFilter] = useState(projectCategories[0]);
   const jumpElementRef = useRef<HTMLSpanElement>();
-  const isMobile = useContext(IsMobileContext);
 
   useLayoutEffect(() => {
     document.getElementById('__next')?.classList.add('no-pad');
@@ -69,11 +64,6 @@ function IndexPage({ projects, projectCategories }: IndexProps) {
       <Head>
         <title>Patricia O&rsquo;Connor</title>
       </Head>
-      {!isMobile ? (
-        <div className="full-bleed carousel">
-          <Carousel items={homeGalleryItems} />
-        </div>
-      ) : null }
       <span id="All%20Projects" ref={(elementRef) => { jumpElementRef.current = elementRef ?? undefined; }} aria-hidden="true" style={{ position: 'relative', top: 'calc(-50px - 4em)' }} />
       <div className="projects-container">
         <nav className="projects-nav">

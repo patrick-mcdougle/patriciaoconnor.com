@@ -9,14 +9,14 @@
   },
   "elements": [
     {
+      "type": "full-bleed-video",
+      "videoFile": "imgs/POC_GirlTalk/POC_GirlTalk_Video_FullBleed.MP4"
+    },
+    {
       "type": "scroll-gallery",
       "items": [
         { "src": "imgs/POC_GirlTalk/POC_GirlTalk_Thumbnail.jpg" }
       ]
-    },
-    {
-      "type": "full-bleed-video",
-      "videoFile": "imgs/POC_GirlTalk/POC_GirlTalk_Video_FullBleed.MP4"
     },
     {
       "type": "scroll-gallery",

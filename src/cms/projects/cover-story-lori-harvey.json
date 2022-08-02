@@ -1,0 +1,36 @@
+{
+  "title": "Lori Harvey",
+  "category": ["Editorial"],
+  "displayCategory": "Cover Story",
+  "thumbnail": "imgs/POC_CoverStory_Harvey/POC_CoverStory_Harvey_Thumbnail.jpg",
+  "descriptionHTML": "<p>“The Real Lori Harvey” by Kelsey Castañon</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/entertainment/lori-harvey-interview-cover-story-48684889\">Read the Feature Story</a>",
+  "credits": {
+    "My Role": "Story Design Direction; Page Build; Social Media and Marketing Graphics"
+  },
+  "elements": [
+    {
+      "type": "full-bleed-video",
+      "videoFile": "imgs/POC_CoverStory_Harvey/POC_CoverStory_Harvey_Video_FullBleed.mp4"
+    },
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_CoverStory_Harvey/POC_CoverStory_Harvey_Cover_Tall.jpg", "class": "tall" }
+      ]
+    },
+    {
+      "type": "scroll-gallery",
+      "items": [
+        {
+          "src": "imgs/POC_CoverStory_Harvey/POC_CoverStory_Harvey_Image_01_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Harvey/POC_CoverStory_Harvey_Image_02_Tall.jpg", "class": "tall"
+        },
+        {
+          "src": "imgs/POC_CoverStory_Harvey/POC_CoverStory_Harvey_Image_03_Tall.jpg", "class": "tall"
+        }
+      ]
+    }
+  ]
+}
