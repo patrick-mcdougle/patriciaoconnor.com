@@ -1,20 +1,25 @@
-import React from 'react';
+import React from "react";
 
 export default function Bio() {
   return (
     <>
       <div>
-        <img src="imgs/POC_Portfolio_Bio_Img_1000x1000.jpg" alt="Patricia O'Connor beside a fjord in Norway" />
+        <img
+          src="imgs/POC_Portfolio_Bio_Img_1000x1000.jpg"
+          alt="Patricia O'Connor beside a fjord in Norway"
+        />
       </div>
       <div>
         <h1 className="minerva">hello.</h1>
-        <p className="intro">I&rsquo;m a Design Director with an expertise in logo and brand design, illustration, and lettering.</p>
         <p>
-          My background in Architecture means I approach design from a truly graphic perspective.
-          For me, everything begins with shape, proportion, and balance. This is why I have a
-          particular connection to Art Deco design. It’s bold and modern, while being harmonious
-          and balanced. I believe in simple designs with a high attention to detail and a touch of
-          whimsy.
+          I&rsquo;m an experienced design leader with expertise in logo and
+          brand design, print, packaging, and illustration.
+        </p>
+        <p>
+          My background in Architecture means I approach design from a truly
+          graphic perspective. For me, everything begins with shape, proportion,
+          and balance. I believe in simple designs with a high attention to
+          detail and a touch of whimsy.
         </p>
         <h2>In Brief</h2>
         <dl>
@@ -35,7 +40,7 @@ export default function Bio() {
           </dd>
           <dt className="bold">In the morning: </dt>
           <dd>
-            Cold, black coffee
+            Cold brew, even in winter
             <br />
           </dd>
           <dt className="bold">At night: </dt>
@@ -45,11 +50,17 @@ export default function Bio() {
           </dd>
           <dt className="bold">Last Meal: </dt>
           <dd>
-            Fougasse with green olives and chocolate covered orange peel
+            Sourdough with green olives and chocolate covered orange peel
             <br />
           </dd>
           <dt className="bold">Happy Place: </dt>
-          <dd>Scandinavia (this photo was taken in <a target="_blank" href="https://goo.gl/maps/91KJRnVH2vuntkJr6">Solvorn, Norway</a>)</dd>
+          <dd>
+            Scandinavia (this photo was taken in{" "}
+            <a target="_blank" href="https://goo.gl/maps/91KJRnVH2vuntkJr6">
+              Solvorn, Norway
+            </a>
+            )
+          </dd>
         </dl>
         <h2>Stay In Touch</h2>
         <p>

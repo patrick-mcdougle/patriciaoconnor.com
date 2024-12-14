@@ -1,0 +1,18 @@
+{
+  "title": "POPSUGAR Relaunch",
+  "category": ["Branding", "Editorial"],
+  "displayCategory": "Branding",
+  "thumbnail": "imgs/POC_POPSUGAR_Relaunch/Thumbnail_PS24_05_PSGrid.jpg",
+  "descriptionHTML": "<p>In 2024 Popsugar relaunched as PS, a brand focused on cultivating the well-being of its audience through real-life stories, first-person perspectives, and expert-backed information. The relaunch features a new name, new logo and a narrower focus on the categories PS’s audience is most passionate about: Health, Fitness, Beauty, and&nbsp;Balance.</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/\">Visit the PS website</a><br/><a target=\"_blank\" href=\"https://www.instagram.com/ps.feelgood/\">Instagram</a></p>",
+  "credits": {
+    "My Role": "Brand design development; Social media, marketing, and editorial design"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        { "src": "imgs/POC_POPSUGAR_Relaunch/Thumbnail_PS24_05_PSGrid.jpg" }
+      ]
+    }
+  ]
+}

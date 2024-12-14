@@ -1,0 +1,30 @@
+{
+  "title": "POPSUGAR x Walmart Bath & Body Collection",
+  "category": ["Print & Packaging"],
+  "displayCategory": "Print & Packaging",
+  "thumbnail": "imgs/POC_Walmart/POC_Walmart_Bath_Collection_Thumbnail.jpg",
+  "descriptionHTML": "<p>Through a 360-degree approach to wellness, this collection aims to bridge fitness, health, mind, and body, inviting women to see themselves in the pursuit of living well. Produced in partnership with Centric Brands, POPSUGAR’s bath and body collection will be available online and in-store at over 2000 locations, featuring a 7-item bath and body line including shower steamers, bath flakes, and body oil.</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/fitness/shop-popsugars-latest-collections-at-walmart\">Shop the Collection</a></p>",
+  "credits": {
+    "My Role": "Product Development; Packaging and Custom Icon Set; Landing Page Design; Social Media and Marketing Design"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        {
+          "src": "imgs/POC_Walmart/POC_Walmart_Bath_Collection_Thumbnail.jpg"
+        },
+        {
+          "src": "imgs/POC_Walmart/POC_Walmart_Bath_Collection_Image_01.jpg"
+        },
+        {
+          "src": "imgs/POC_Walmart/POC_Walmart_Bath_Collection_Image_02.jpg"
+        },
+        {
+          "type": "video",
+          "videoFile": "imgs/POC_Walmart/Walmart_Landing_Page.mov"
+        }
+      ]
+    }
+  ]
+}
