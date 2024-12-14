@@ -1,0 +1,36 @@
+{
+  "title": "POPSUGAR x Walmart Fitness Collection",
+  "category": ["Print & Packaging"],
+  "displayCategory": "Print & Packaging",
+  "thumbnail": "imgs/POC_Walmart/POC_Walmart_Fitness_Collection_Thumbnail.jpg",
+  "descriptionHTML": "<p>Through a 360-degree approach to wellness, this collection aims to bridge fitness, health, mind, and body, inviting women to see themselves in the pursuit of living well. Produced in partnership with Fit For Life, POPSUGAR’s fitness collection will be available online and in-store at over 3100 locations, featuring a 16-item equipment line including bar weights, as well as resistance bands and wrist weight sets.</p><p><a target=\"_blank\" href=\"https://www.popsugar.com/fitness/shop-popsugars-latest-collections-at-walmart\">Shop the Collection</a></p>",
+  "credits": {
+    "My Role": "Product Development; Art Direction; Packaging and Custom Icon Set; Landing Page Design; Social Media and Marketing Design"
+  },
+  "elements": [
+    {
+      "type": "scroll-gallery",
+      "items": [
+        {
+          "src": "imgs/POC_Walmart/POC_Walmart_Fitness_Collection_Image_01.jpg"
+        },
+        {
+          "src": "imgs/POC_Walmart/POC_Walmart_Fitness_Collection_Image_02.jpg"
+        },
+        {
+          "src": "imgs/POC_Walmart/POC_Walmart_Fitness_Collection_Image_03.jpg"
+        },
+        {
+          "src": "imgs/POC_Walmart/POC_Walmart_Fitness_Collection_Image_04.jpg"
+        },
+        {
+          "src": "imgs/POC_Walmart/POC_Walmart_Fitness_Collection_Image_05.jpg"
+        },
+        {
+          "type": "video",
+          "videoFile": "imgs/POC_Walmart/Walmart_Landing_Page.mov"
+        }
+      ]
+    }
+  ]
+}

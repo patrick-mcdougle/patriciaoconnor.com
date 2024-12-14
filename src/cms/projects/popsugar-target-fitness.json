@@ -1,5 +1,5 @@
 {
-  "title": "POPSUGAR Fitness Collection",
+  "title": "POPSUGAR x Target Fitness Collection",
   "category": ["Branding", "Print & Packaging"],
   "displayCategory": "Branding",
   "thumbnail": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Thumbnail.jpg",
@@ -11,7 +11,9 @@
     {
       "type": "scroll-gallery",
       "items": [
-        { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Image_01.jpg" }
+        {
+          "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Image_01.jpg"
+        }
       ]
     },
     {
@@ -21,17 +23,33 @@
     {
       "type": "scroll-gallery",
       "items": [
-        { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Image_02.jpg" },
-        { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Image_03.jpg" },
+        {
+          "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Image_02.jpg"
+        },
+        {
+          "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_Image_03.jpg"
+        },
         {
           "type": "carousel",
           "items": [
-            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_01.jpg" },
-            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_02.jpg" },
-            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_03.jpg" },
-            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_04.jpg" },
-            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_05.jpg" },
-            { "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_06.jpg" }
+            {
+              "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_01.jpg"
+            },
+            {
+              "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_02.jpg"
+            },
+            {
+              "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_03.jpg"
+            },
+            {
+              "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_04.jpg"
+            },
+            {
+              "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_05.jpg"
+            },
+            {
+              "src": "imgs/POC_Fitness_Collection/POC_Fitness_Collection_C1_06.jpg"
+            }
           ]
         }
       ]
